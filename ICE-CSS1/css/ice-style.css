@@ -28,7 +28,9 @@ nav ul{
 	background-color: rgb(55,125,33);
 }
 
-nav a:link { text-decoration: none;color: white}
+nav a:link { text-decoration: none;color: white;}
+
+nav a:visited{ text-decoration: none;color: white;}
 
 aside {
 	float: right;
