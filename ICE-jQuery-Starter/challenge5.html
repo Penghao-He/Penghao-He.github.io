@@ -35,10 +35,27 @@
 		text-align: center;
 	}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
 
-	<script type="text/javascript">
-	// I used Two functions here.  Starter idea at: 
-	// https://codepen.io/ColleenEMc/pen/XmZzWw
+		$(document).ready(function(){
+
+			$('.preview').on('mouseover', function(){
+				$('#image').css({
+					"background-image": 'url(' + this.src + ')'
+				});
+				$('#image').text(this.alt);
+			});
+
+			$('.preview').on('mouseleave', function(){
+				$('#image').css({
+					"background-image": 'none'
+				});
+				$('#image').text('Hover over an image below.');
+			});
+		
+		});
+		
 	</script>
 </head>
 

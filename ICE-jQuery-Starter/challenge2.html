@@ -11,22 +11,26 @@
       $(document).ready(function(){
 
       	$('#useBilling').on('click', function(){
-      		
-      		// alert($('#useBilling').prop('checked'));
-      		// alert($('#useBilling').prop('checked') == true);
       		if(this.checked){
       			$('#home').val($('#billing').val());
       			$('#home').prop("disabled", true);
+      			$('#home').css({
+      				'background-color': "rgb(230,230,230)"
+      			});
+      		} else {
+      			$('#home').prop("disabled", false);
+      			$('#home').css({
+      				'background-color': "#FFFFFF"
+      			});
       		}
       	});
-      	
       	
       });
     </script>
 </head>
 <body>
     <h1>Challenge Two</h1>
-    <form action="challenge3.html">
+    <form action="challenge5.html">
       <fieldset>
         <legend>Billing Information</legend>
         <div>
@@ -42,7 +46,7 @@
         <br>
         <textarea name="homeAdd" id="home"></textarea>
         </div>
-        <input type = "submit" value = "Go To Challenge 3">
+        <input type = "submit" value = "Go To Challenge 5">
       </fieldset>
 </body>
 </html>
