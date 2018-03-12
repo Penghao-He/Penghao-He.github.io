@@ -9,10 +9,13 @@
     <script>
       // YOUR CODE HERE
       $(document).ready(function(){
-      	$('#useBilling').on('click', () =>{
-      		$('#home').val($('#billing').val());
+
+      	$('#useBilling').on('click', function(){
+      		
       		// alert($('#useBilling').prop('checked'));
-      		if($('#useBilling').prop('checked') == true){
+      		// alert($('#useBilling').prop('checked') == true);
+      		if(this.checked){
+      			$('#home').val($('#billing').val());
       			$('#home').prop("disabled", true);
       		}
       	});

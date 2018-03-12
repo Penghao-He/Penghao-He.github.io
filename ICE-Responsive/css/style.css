@@ -235,10 +235,11 @@ footer p{
 		text-align: right;
 	}
 	.photo-cell{
-		float: left;
-		width: 48%;
+		display: inline-block;
+		width: 47%;
 	}
 	.vertical{
-		width: 23%;
+		display: inline-block;
+		width: 22%;
 	}
 }
