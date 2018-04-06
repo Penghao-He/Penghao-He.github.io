@@ -131,6 +131,13 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+@media (min-width: 768px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+}
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;

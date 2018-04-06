@@ -2,6 +2,15 @@
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
+  $(document).ready(function(){
+    $("#ti").hide();
+    $("#ti").animate({
+
+           opacity: "show"
+
+       }, "slow");
+  });
+
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -13,7 +22,7 @@
         return false;
       }
     }
-  });
+  }); 
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {

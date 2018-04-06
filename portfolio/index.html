@@ -52,7 +52,7 @@
 
 	<header class="masthead text-center text-white d-flex">
       <div class="container my-auto">
-        <div class="row">
+        <div class="row" id="ti">
           <div class="col-lg-10 mx-auto">
             <h1 class="text-uppercase">
               <strong>Penghao He</strong>
@@ -80,7 +80,7 @@
       <div class="container-fluid p-0">
         <div class="row popup-gallery">
 
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a class="portfolio-box" href="img/DSC01272.jpg">
               <img class="img-fluid" src="img/DSC01272.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -95,7 +95,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a class="portfolio-box" href="img/DSC01314.jpg">
               <img class="img-fluid" src="img/DSC01314.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -110,7 +110,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a class="portfolio-box" href="img/DSC01600.jpg">
               <img class="img-fluid" src="img/DSC01600.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -125,7 +125,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a class="portfolio-box" href="img/DSC01634.jpg">
               <img class="img-fluid" src="img/DSC01634.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -140,7 +140,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a class="portfolio-box" href="img/DSC01644.jpg">
               <img class="img-fluid" src="img/DSC01644.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -155,7 +155,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-6 col-sm-12">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <a class="portfolio-box" href="img/DSC01721.jpg">
               <img class="img-fluid" src="img/DSC01721.jpg" alt="">
               <div class="portfolio-box-caption">
@@ -165,6 +165,21 @@
                   </div>
                   <div class="project-name">
                     My girl
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <a class="portfolio-box" href="img/DSC01973.jpg">
+              <img class="img-fluid" src="img/DSC01973.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Cancun, Mexico
+                  </div>
+                  <div class="project-name">
+                    Sea Turtle
                   </div>
                 </div>
               </div>
@@ -260,7 +275,7 @@
           <div class="col-lg-8 mx-auto text-center">
             <h2 class="section-heading">Let's Get In Touch!</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to contact with me? That's great! Give us a call or send us an email and I will get back to you as soon as possible!</p>
+            <p class="mb-5">Ready to contact with me? That's great! Give me a call or send me an email and I will get back to you as soon as possible!</p>
           </div>
         </div>
         <div class="row">
@@ -275,6 +290,50 @@
             </p>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+          	<br>
+            <p class="mb-5">Or just leave me a message.</p>
+          </div>
+        </div>
+        <div class="col-lg-8 mx-auto">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Name</label>
+                  <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Email Address</label>
+                  <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Phone Number</label>
+                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <label>Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <br>
+              <div id="success"></div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Send</button>
+                <button type="reset" class="btn btn-primary btn-xl" id="clearall">Clear all</button>
+              </div>
+            </form>
+          </div>
       </div>
     </section>
 
@@ -290,8 +349,10 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/creative.js"></script>
+    <script src="js/contact_me.js"></script>
 </body>
 </html>
