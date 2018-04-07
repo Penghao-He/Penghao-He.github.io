@@ -40,14 +40,14 @@
 
 		$(document).ready(function(){
 
-			$('.preview').on('mouseover', function(){
+			$('.preview').on('focus mouseover', function(){
 				$('#image').css({
 					"background-image": 'url(' + this.src + ')'
 				});
 				$('#image').text(this.alt);
 			});
 
-			$('.preview').on('mouseleave', function(){
+			$('.preview').on('blur mouseleave', function(){
 				$('#image').css({
 					"background-image": 'none'
 				});
