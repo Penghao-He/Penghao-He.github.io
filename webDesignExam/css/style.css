@@ -1,0 +1,18 @@
+body {
+	background-image: url("../images/sun-pattern.png");
+}
+
+img{
+	width: 100%;
+}
+
+.photo-cell{
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	border-style:solid;
+	padding: 5%;
+	border-width: 5px;
+	border-color: blue;
+	width: 49%;
+}

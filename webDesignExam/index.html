@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  		<meta charset="UTF-8">
+  		<title>Penghao He</title>
+  		<link rel="stylesheet" type="text/css" href="css/style.css">
+  		<script src="js/jquery.min.js"></script>
+  		<script>
+  			$(document).ready(function(){
+    			$('#button1').on('click', function(){
+    				$('#photo1').css({"display": "none"});
+    				$('#photo2').css({"margin-left": "30%"})
+    			});
+    			$('#button2').on('click', function(){
+    				$('#photo1').css({"display": "inline-block"});
+    				$('#photo2').css({"margin": "0"});
+    			});
+    		});
+  		</script>
+  	</head>
+  	<body>
+  		<p><h1>Penghao He</h1></p>
+  		<div class="photo-grid">
+  			<div class="photo-cell" id="photo1">
+  				<img src="images/examPic.jpg" alt="examPic.jpg">
+  			</div>
+  			<div class="photo-cell" id="photo2">
+  				<img src="images/UMSI-logo.jpg" alt="UMSI-logo.jpg">
+  			</div>
+  		</div>
+  		<div class="buttons">
+			<button class="butt" id="button1">Hide Image</button>
+			<button class="butt" id="button2">Show Image</button>
+  		</div>
+  	</body>
